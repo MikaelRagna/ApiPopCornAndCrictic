@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PopCornAndCritics</name>
+    </assembly>
+    <members>
+        <member name="T:PopCornAndCritics.Migrations.CriandoTabelaDeUser">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.CriandoTabelaDeUser.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.CriandoTabelaDeUser.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.CriandoTabelaDeUser.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:PopCornAndCritics.Migrations.CriandoTabelaDeFilmes">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.CriandoTabelaDeFilmes.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.CriandoTabelaDeFilmes.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.CriandoTabelaDeFilmes.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail20">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail20.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail20.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail20.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail21">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail21.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail21.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail21.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
