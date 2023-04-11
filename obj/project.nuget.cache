@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iuk5bWFjVWpHpo9BAwguExtbOBxt5lVqo83ep13Yew+gTbnWTRp2SZ7+NmiSHWeS4NkYzm3qrPBg1BT2NVwy9A==",
+  "dgSpecHash": "ew+9xaZI/t7qUm5wHqrNNyTiAJiwU711Onjpl9L5T7hfiGLvUt2XbWtAf+SjRwfFt9sGhPheMv8D2XkHRJSGdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\125279\\source\\repos\\PopCornAndCritics\\PopCornAndCritics\\PopCornAndCritics.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,7 @@
     "C:\\Users\\125279\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "C:\\Users\\125279\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "C:\\Users\\125279\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
+    "C:\\Users\\125279\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\125279\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\125279\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\125279\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"

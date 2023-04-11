@@ -64,5 +64,17 @@
         <member name="M:PopCornAndCritics.Migrations.TratamentoDeChaveUnicaNoEmail21.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:PopCornAndCritics.Migrations.CriandoRelacaoDeTabela">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.CriandoRelacaoDeTabela.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.CriandoRelacaoDeTabela.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PopCornAndCritics.Migrations.CriandoRelacaoDeTabela.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

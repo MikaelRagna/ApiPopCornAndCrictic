@@ -23,5 +23,6 @@ namespace PopCornAndCritics.Data
         }
 
         public DbSet<Movie> Movies { get; set; }
+        public DbSet<Comments> Comments { get; set; }
     }
 }

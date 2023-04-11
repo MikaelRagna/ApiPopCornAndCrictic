@@ -5,6 +5,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	<BaseOutputPath>bin</BaseOutputPath>
+	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	<InvariantGlobalization>true</InvariantGlobalization>
+	  
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +24,7 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
     <PackageReference Include="ServiceStack.Interfaces" Version="6.8.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
