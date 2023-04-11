@@ -39,8 +39,13 @@ public class UserController : ControllerBase
     {
         var login = _context.Users.FirstOrDefault(user => user.email == loginModel.email);
         var resLogin = _mapper.Map<ReadUserDto>(login);
-        if (login == null) return NotFound("Usuário com este e-mail não foi encontrado");
-        if (login.password != loginModel.password) return Unauthorized("Senha incorreta");
+
+        if (login == null) 
+            return NotFound("Usuário com este e-mail não foi encontrado");
+
+        if (login.password != loginModel.password) 
+            return Unauthorized("Senha incorreta");
+
         return Ok(resLogin);
     }
 
