@@ -10,8 +10,8 @@ using PopCornAndCritics.Data;
 namespace PopCornAndCritics.Migrations
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20230411201916_CriandoRelacaoDeTabela")]
-    partial class CriandoRelacaoDeTabela
+    [Migration("20230412195103_CriandoTabelaComments")]
+    partial class CriandoTabelaComments
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,17 +31,17 @@ namespace PopCornAndCritics.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("Id_Author")
+                    b.Property<int>("MovieId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id_Movie")
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Id_Author");
+                    b.HasIndex("MovieId");
 
-                    b.HasIndex("Id_Movie");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Comments");
                 });
@@ -124,15 +124,15 @@ namespace PopCornAndCritics.Migrations
 
             modelBuilder.Entity("PopCornAndCritics.Model.Comments", b =>
                 {
-                    b.HasOne("PopCornAndCritics.Model.User", "Author")
+                    b.HasOne("PopCornAndCritics.Model.Movie", "Movie")
                         .WithMany()
-                        .HasForeignKey("Id_Author")
+                        .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PopCornAndCritics.Model.Movie", "Movie")
+                    b.HasOne("PopCornAndCritics.Model.User", "Author")
                         .WithMany()
-                        .HasForeignKey("Id_Movie")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

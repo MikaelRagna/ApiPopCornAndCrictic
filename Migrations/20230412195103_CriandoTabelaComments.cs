@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace PopCornAndCritics.Migrations
 {
     /// <inheritdoc />
-    public partial class CriandoRelacaoDeTabela : Migration
+    public partial class CriandoTabelaComments : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,8 +17,8 @@ namespace PopCornAndCritics.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Id_Author = table.Column<int>(type: "int", nullable: false),
-                    Id_Movie = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    MovieId = table.Column<int>(type: "int", nullable: false),
                     Content = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
@@ -26,14 +26,14 @@ namespace PopCornAndCritics.Migrations
                 {
                     table.PrimaryKey("PK_Comments", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Comments_Movies_Id_Movie",
-                        column: x => x.Id_Movie,
+                        name: "FK_Comments_Movies_MovieId",
+                        column: x => x.MovieId,
                         principalTable: "Movies",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Comments_Users_Id_Author",
-                        column: x => x.Id_Author,
+                        name: "FK_Comments_Users_UserId",
+                        column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -41,14 +41,14 @@ namespace PopCornAndCritics.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Comments_Id_Author",
+                name: "IX_Comments_MovieId",
                 table: "Comments",
-                column: "Id_Author");
+                column: "MovieId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Comments_Id_Movie",
+                name: "IX_Comments_UserId",
                 table: "Comments",
-                column: "Id_Movie");
+                column: "UserId");
         }
 
         /// <inheritdoc />

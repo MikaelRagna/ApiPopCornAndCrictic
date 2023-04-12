@@ -8,12 +8,11 @@ public class Comments
     public int Id { get; set; }
 
     [Required]
-    public int Id_Author { get; set; }
-    [ForeignKey("Id_Author")]
+    [ForeignKey("UserId")]
+    public int UserId { get; set; }    
+
     public User Author { get; set; }
-    [Required]
-    public int Id_Movie { get; set; }
-    [ForeignKey("Id_Movie")]
+    
     public Movie Movie { get; set;}
     [Required]
     public string Content { get; set; }

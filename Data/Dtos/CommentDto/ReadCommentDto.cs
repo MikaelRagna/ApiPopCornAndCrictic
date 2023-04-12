@@ -4,14 +4,13 @@ using PopCornAndCritics.Model;
 
 namespace PopCornAndCritics.Data.Dtos.CommentDto;
 
-public class CreateComentDto
+public class ReadCommentDto
 {
-
     public int UserId { get; set; }
 
-    public User Author { get; set; }
+    public ReadUserDto Author { get; set; }
 
-    public Movie Movie { get; set; }
+    public ReadMovieDto Movie { get; set; }
 
     public string Content { get; set; }
 }
