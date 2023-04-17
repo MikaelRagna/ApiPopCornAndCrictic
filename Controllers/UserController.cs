@@ -31,7 +31,7 @@ public class UserController : ControllerBase
         _context.SaveChanges();
         CreatedAtAction(nameof(UserList), new { id = user.Id }, user);
         return Ok();
-        
+
     }
 
     [HttpPost("/signin")]
@@ -40,10 +40,10 @@ public class UserController : ControllerBase
         var login = _context.Users.FirstOrDefault(user => user.email == loginModel.email);
         var resLogin = _mapper.Map<ReadUserDto>(login);
 
-        if (login == null) 
+        if (login == null)
             return NotFound("Usuário com este e-mail não foi encontrado");
 
-        if (login.password != loginModel.password) 
+        if (login.password != loginModel.password)
             return Unauthorized("Senha incorreta");
 
         return Ok(resLogin);
@@ -60,7 +60,7 @@ public class UserController : ControllerBase
     {
         var user = _context.Users
             .FirstOrDefault(user => user.Id == id);
-        if(user == null) return NotFound();
+        if (user == null) return NotFound();
         var UserDto = _mapper.Map<ReadUserDto>(user);
         return Ok(UserDto);
 
@@ -86,5 +86,5 @@ public class UserController : ControllerBase
         return NoContent();
     }
 
-    
+
 }

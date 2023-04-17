@@ -9,9 +9,5 @@ public class CreateComentDto
 
     public int UserId { get; set; }
 
-    public User Author { get; set; }
-
-    public Movie Movie { get; set; }
-
     public string Content { get; set; }
 }

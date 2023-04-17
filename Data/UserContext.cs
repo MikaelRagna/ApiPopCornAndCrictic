@@ -19,7 +19,6 @@ namespace PopCornAndCritics.Data
            var result = modelBuilder.Entity<User>()
                 .HasIndex(u => new { u.email })
                 .IsUnique();
-            Console.WriteLine(result);
         }
 
         public DbSet<Movie> Movies { get; set; }

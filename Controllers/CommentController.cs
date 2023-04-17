@@ -19,24 +19,24 @@ public class CommentController : ControllerBase
         _mapper = mapper;
     }
     [HttpPost("/comment/{idMovie}")]
-    public IActionResult MovieComment(int idMovie, int idAuthor, [FromBody] string content)
+    public IActionResult MovieComment(int idMovie,[FromBody] CreateComentDto newComment )
     {
         var movieL = _context.Movies.FirstOrDefault(id => id.Id == idMovie);
-        var userL = _context.Users.FirstOrDefault(u => u.Id == idAuthor);
+        var userL = _context.Users.FirstOrDefault(u => u.Id == newComment.UserId);
         if (userL == null) return NotFound("Usuário não existe");
         if (movieL == null) return NotFound("Filme Não Existe");
 
-        CreateComentDto comment = new CreateComentDto();
+        Comments comment = new Comments();
 
         comment.Movie = movieL;
         comment.Author = userL;
-        comment.Content = content;
+        comment.Content = newComment.Content;
 
-        var resComment = _mapper.Map<Comments>(comment);
+        
 
-        _context.Comments.Add(resComment);
+        _context.Comments.Add(comment);
         _context.SaveChanges();
-        return Ok(_mapper.Map<ReadCommentDto>(resComment));
+        return Ok(_mapper.Map<ReadCommentDto>(comment));
     }
 
     [HttpGet("/comment/{idMovie}")]
